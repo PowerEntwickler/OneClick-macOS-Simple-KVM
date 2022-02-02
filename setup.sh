@@ -4,6 +4,8 @@ sudo apt-get install qemu-system qemu-utils python python3-pip -y  # for Ubuntu,
 
 qemu-img create -f qcow2 macOS.qcow2 64G
 
+chmod u+rwx fetch-macOS-v2.py
+
 ./fetch-macOS-v2.py
 
 qemu-img convert BaseSystem.dmg -O raw BaseSystem.img
